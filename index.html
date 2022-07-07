@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__grid">
+            <div class="header__logo">
+                <img src="./build/img/logo.svg" alt="logo">
+            </div>
+            <nav class="socials">
+                <a class="socials__link" href="https://facebook.com/carolinaspa">
+                    <span class="socials__accessible">Facebook</span>
+                </a>
+                <a class="socials__link" href="https://twitter.com">
+                    <span class="socials__accessible">Twitter</span>
+                </a>
+                <a class="socials__link" href="https://instagram.com">
+                    <span class="socials__accessible">Instagram</span>
+                </a>
+                <a class="socials__link" href="https://youtube.com">
+                    <span class="socials__accessible">YouTube</span>
+                </a>
+                <a class="socials__link" href="https://pinterest.com">
+                    <span class="socials__accessible">Pinterest</span>
+                </a>
+                <a class="socials__link" href="https://tiktok.com">
+                    <span class="socials__accessible">TikTok</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="navbar">
+        <div class="navbar__border">
+            <nav class="navbar__container">
+                <a class="navbar__link" href="">Home</a>
+                <a class="navbar__link" href="">Us</a>
+                <a class="navbar__link" href="">Services</a>
+                <a class="navbar__link" href="">Products</a>
+                <a class="navbar__link" href="">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="swiper slider container">
+        <ul class="swiper-wrapper">
+
+            <li class="swiper-slide ">
+                <picture>
+                    <source srcset="./build/img/slide_01.avif" type="image/avif">
+                    <source srcset="./build/img/slide_01.webp" type="image/webp">
+                    <img class="slider__img"  loading="lazy" src="./build/img/slide_01.jpg" alt="slider">
+                </picture>
+            </li><!-- end -->
+
+            <li class="swiper-slide ">
+                <picture>
+                    <source srcset="./build/img/slide_02.avif" type="image/avif">
+                    <source srcset="./build/img/slide_02.webp" type="image/webp">
+                    <img class="slider__img"  loading="lazy" src="./build/img/slide_02.jpg" alt="slider">
+                </picture>
+            </li><!-- end -->
+
+            <li class="swiper-slide ">
+                <picture>
+                    <source srcset="./build/img/slide_03.avif" type="image/avif">
+                    <source srcset="./build/img/slide_03.webp" type="image/webp">
+                    <img class="slider__img"  loading="lazy" src="./build/img/slide_03.jpg" alt="slider">
+                </picture>
+            </li><!-- end -->
+
+        </ul>
+    </section>
+
+    <section class="welcome section">
+        <h1 class="welcome__title">Welcome to our <span>Website</span></h1>
+        <p class="welcome__text">You will feel like new person</p>
+    </section>
+
+    <section class="cards">
+        <div class="cards__grid container">
+
+            <div class="card">
+                <picture>
+                    <source srcset="./build/img/service1.avif" type="image/avif">
+                    <source srcset="./build/img/service1.webp" type="image/webp">
+                    <img loading="lazy" class="card__img" src="./build/img/service1.jpg" alt="Services">
+                </picture>
+                <div class="card__content">
+                    <h2 class="card__title">learn about <span>us</span></h2>
+                    <a href="#" class="card__link">Read more</a>
+                </div>
+            </div><!-- end -->
+
+            
+            <div class="card">
+                <picture>
+                    <source srcset="./build/img/service2.avif" type="image/avif">
+                    <source srcset="./build/img/service2.webp" type="image/webp">
+                    <img loading="lazy" class="card__img" src="./build/img/service2.jpg" alt="Services">
+                </picture>
+                <div class="card__content">
+                    <h2 class="card__title">Services <span>offered</span></h2>
+                    <a href="#" class="card__link">Read more</a>
+                </div>
+            </div><!-- end -->
+
+            
+            <div class="card">
+                <picture>
+                    <source srcset="./build/img/service3.avif" type="image/avif">
+                    <source srcset="./build/img/service3.webp" type="image/webp">
+                    <img loading="lazy" class="card__img" src="./build/img/service3.jpg" alt="Services">
+                </picture>
+                <div class="card__content">
+                    <h2 class="card__title">visit our <span>store</span></h2>
+                    <a href="#" class="card__link">Read more</a>
+                </div>
+            </div><!-- end -->
+
+        </div>
+    </section>
+
+    <section class ="schedule">
+        <div class="schedule__grid container">
+            <div class="schedule__content">
+                <h3 class="schedule__title">Schedule</h3>
+                <p class="schedule__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque rerum voluptatibus delectus pariatur quo, ratione magnam laudantium reprehenderit dolorem assumenda atque dignissimos eligendi sequi necessitatibus obcaecati quisquam libero modi explicabo?</p>
+
+                <table class="table">
+
+                    <thead class="table__head">
+                        <tr>
+                            <th class="table__th">Day</th>
+                            <th class="table__th">From</th>
+                            <th class="table__th">Until</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="table__body">
+                        <tr class="table__tr">
+                            <td class="table__td">Monday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr">
+                            <td class="table__td">Tuesday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr">
+                            <td class="table__td">Wednesday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr">
+                            <td class="table__td">Thursday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr">
+                            <td class="table__td">Friday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr">
+                            <td class="table__td">Saturday</td>
+                            <td class="table__td">09:00</td>
+                            <td class="table__td">19:00</td>
+                        </tr><!-- end -->
+
+                        <tr class="table__tr--sunday">
+                            <td class="table__td">Sunday</td>
+                            <td class="table__td" colspan="2">Close</td>
+                        </tr><!-- end -->
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <main class="products container section">
+        <h2 class="products__title">Our <span>products</span></h2>
+
+        <div class="products__grid">
+
+            <div class="product">
+                <div class="product__mask">
+                    <picture>
+                        <source srcset="./build/img/product1.avif" type="image/avif">
+                        <source srcset="./build/img/product1.webp" type="image/webp">
+                        <img loading="lazy" class="product__img" src="./build/img/product1.jpg" alt="product">
+                    </picture>
+                </div>
+                <div class="product__content">
+                    <h3 class="product__title">Product 1</h3>
+                    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, adipisci beatae est</p>
+                    <p class="product__price">$500</p>
+                </div>
+            </div><!-- end -->
+
+            
+            <div class="product">
+                <div class="product__mask">
+                    <picture>
+                        <source srcset="./build/img/product2.avif" type="image/avif">
+                        <source srcset="./build/img/product2.webp" type="image/webp">
+                        <img loading="lazy" class="product__img" src="./build/img/product2.jpg" alt="product">
+                    </picture>
+                </div>
+                <div class="product__content">
+                    <h3 class="product__title">Product2</h3>
+                    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, adipisci beatae est</p>
+                    <p class="product__price">$500</p>
+                </div>
+            </div><!-- end -->
+            
+            
+            <div class="product">
+                <div class="product__mask">
+                    <picture>
+                        <source srcset="./build/img/product3.avif" type="image/avif">
+                        <source srcset="./build/img/product3.webp" type="image/webp">
+                        <img loading="lazy" class="product__img" src="./build/img/product3.jpg" alt="product">
+                    </picture>
+                </div>
+                <div class="product__content">
+                    <h3 class="product__title">Product 3</h3>
+                    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, adipisci beatae est</p>
+                    <p class="product__price">$500</p>
+                </div>
+            </div><!-- end -->
+
+               
+            <div class="product">
+                <div class="product__mask">
+                    <picture>
+                        <source srcset="./build/img/product4.avif" type="image/avif">
+                        <source srcset="./build/img/product4.webp" type="image/webp">
+                        <img loading="lazy" class="product__img" src="./build/img/product4.jpg" alt="product">
+                    </picture>
+                </div>
+                <div class="product__content">
+                    <h3 class="product__title">Product 4</h3>
+                    <p class="product__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, adipisci beatae est</p>
+                    <p class="product__price">$500</p>
+                </div>
+            </div><!-- end -->
+
+        </div>
+    </main>
+
+    <section class="date">
+        <h2 class="date__title">Take a date</h2>
+        <p class="date__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis autem minima et expedita sed consectetur nam perspiciatis ipsam numquam quaerat aliquid possimus sequi, inventore unde. Amet quia aspernatur delectus tenetur!</p>
+
+        <a href="#" class="date__link">Read More</a>
+    </section>  
+
+    <footer class="footer">
+        <div class="footer__grid container">
+            <div class="footer__widget">
+                <h3 class="footer__title">Us</h3>
+                <p class="footer__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita cum, minus atque harum maxime reprehenderit fugiat sed corrupti inventore tempora quisquam provident aut facere ipsum pariatur, esse velit blanditiis quae!</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__title">Schedule</h3>
+                <p class="footer__text">Mon-Fri: 9AM - 7PM</p>
+                <p class="footer__text">Saturday: 9AM - 2PM</p>
+                <p class="footer__text">Sundays: Cerrado</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__title">Contact</h3>
+                <p class="footer__text">Av. Revolución 1818</p>
+
+                <nav class="socials">
+                    <a class="socials__link" href="https://facebook.com/carolinaspa">
+                        <span class="socials__accessible">Facebook</span>
+                    </a>
+                    <a class="socials__link" href="https://twitter.com">
+                        <span class="socials__accessible">Twitter</span>
+                    </a>
+                    <a class="socials__link" href="https://instagram.com">
+                        <span class="socials__accessible">Instagram</span>
+                    </a>
+                    <a class="socials__link" href="https://youtube.com">
+                        <span class="socials__accessible">YouTube</span>
+                    </a>
+                    <a class="socials__link" href="https://pinterest.com">
+                        <span class="socials__accessible">Pinterest</span>
+                    </a>
+                    <a class="socials__link" href="https://tiktok.com">
+                        <span class="socials__accessible">TikTok</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="footer__copyright">All rights reserverd. - &#169Nehuen Perticarari 2022</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./build/js/main.js"></script>
+</body>
+</html>
